@@ -1,6 +1,7 @@
 import enLang from './entries/en-us';
 import itLang from './entries/it-it';
 import vnLang from './entries/vi-vn';
+import esLang from './entries/es-es';
 
 export const AppLanguages = [
   {
@@ -21,12 +22,19 @@ export const AppLanguages = [
     name: 'Italiano',
     icon: 'it',
   },
+  {
+    languageId: 'spanish',
+    locale: 'es',
+    name: 'Spanish',
+    icon: 'es',
+  },
 ];
 
 const AppLocale = {
   en: enLang,
   vi: vnLang,
   it: itLang,
+  es: esLang,
 };
 
 export default AppLocale;

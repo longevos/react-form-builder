@@ -88,7 +88,7 @@ class ReactForm extends React.Component {
     } else if (ref && ref.inputField && ref.inputField.current) {
       $item = ReactDOM.findDOMNode(ref.inputField.current);
       if ($item && typeof $item.value === 'string') {
-        $item.value = $item.value.trim();
+        $item.value = $item.value.trimStart();
       }
     }
     return $item;
